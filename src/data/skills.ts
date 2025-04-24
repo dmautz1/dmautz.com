@@ -9,18 +9,18 @@ const skills: Skill[] = [
   { name: 'PySpark', level: 5, category: 'etl' },
   { name: 'ETL Pipeline Design', level: 5, category: 'etl' },
   { name: 'Data Transformation', level: 5, category: 'etl' },
-  { name: 'Hive', level: 4, category: 'etl' },
-  { name: 'Trino', level: 4, category: 'etl' },
+  { name: 'Hive', level: 3, category: 'etl' },
+  { name: 'Trino', level: 3, category: 'etl' },
   { name: 'Parquet', level: 4, category: 'etl' },
   
   // Frontend Skills
-  { name: 'React', level: 4, category: 'frontend' },
-  { name: 'Next.js', level: 3, category: 'frontend' },
+  { name: 'React', level: 5, category: 'frontend' },
+  { name: 'Next.js', level: 2, category: 'frontend' },
   { name: 'TypeScript', level: 3, category: 'frontend' },
   { name: 'Bootstrap', level: 4, category: 'frontend' },
   { name: 'jQuery', level: 4, category: 'frontend' },
   { name: 'Tailwind CSS', level: 3, category: 'frontend' },
-  
+
   // Backend Skills
   { name: 'Python', level: 5, category: 'backend' },
   { name: 'Ruby on Rails', level: 5, category: 'backend' },
@@ -30,8 +30,9 @@ const skills: Skill[] = [
   // Database Skills
   { name: 'SQL', level: 5, category: 'database' },
   { name: 'PostgreSQL', level: 5, category: 'database' },
-  { name: 'Hive', level: 5, category: 'database' },
-  { name: 'Trino', level: 5, category: 'database' },
+  { name: 'MySQL', level: 4, category: 'database' },
+  { name: 'MongoDB', level: 3, category: 'database' },
+  { name: 'NoSQL', level: 2, category: 'database' },
   
   // Cloud & DevOps Skills
   { name: 'AWS', level: 4, category: 'cloud' },

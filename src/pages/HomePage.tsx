@@ -28,7 +28,7 @@ const HomePage: React.FC = () => {
 
   const filteredSkills = selectedCategory 
     ? skills.filter(skill => skill.category === selectedCategory)
-    : skills.filter(skill => skill.level >= 4).slice(0, 9);
+    : skills.filter(skill => skill.level == 5).slice(0, 9);
 
   const filterButtons = [
     { id: null, label: 'Top Skills', icon: null },

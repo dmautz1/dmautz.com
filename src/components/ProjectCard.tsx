@@ -81,13 +81,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               href={project.liveUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
               aria-label="View live demo"
             >
-              <div className="flex items-center">
-                <ExternalLink className="h-4 w-4 mr-1" />
-                <span className="text-sm">Live Demo</span>
-              </div>
+              <ExternalLink className="h-4 w-4 mr-2" />
+              Live Demo
             </a>
           )}
         </div>
