@@ -2,6 +2,13 @@
   "version": 2,
   "builds": [
     {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist"
+      }
+    },
+    {
       "src": "src/api/send-email.ts",
       "use": "@vercel/node"
     }
@@ -10,6 +17,10 @@
     {
       "src": "/api/send-email",
       "dest": "src/api/send-email.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
     }
   ]
 } 
