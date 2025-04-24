@@ -33,6 +33,7 @@ const HomePage: React.FC = () => {
   const filterButtons = [
     { id: null, label: 'Top Skills', icon: null },
     { id: 'etl', label: 'ETL', icon: <Database className="h-4 w-4 mr-1" /> },
+    { id: 'frontend', label: 'Frontend', icon: <Code className="h-4 w-4 mr-1" /> },
     { id: 'backend', label: 'Backend', icon: <Cpu className="h-4 w-4 mr-1" /> },
     { id: 'database', label: 'Database', icon: <Database className="h-4 w-4 mr-1" /> },
     { id: 'cloud', label: 'Cloud', icon: <BarChart className="h-4 w-4 mr-1" /> },
@@ -130,7 +131,11 @@ const HomePage: React.FC = () => {
                 key={skill.name}
                 skill={skill.name}
                 level={skill.level}
-                color={skill.level >= 4 ? 'bg-blue-500' : 'bg-gray-500'}
+                color={
+                  skill.level == 5 ? 'bg-green-500' : 
+                  skill.level == 4 ? 'bg-blue-500' : 
+                  'bg-yellow-500'
+                }
               />
             ))}
           </div>
@@ -158,7 +163,7 @@ const HomePage: React.FC = () => {
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Enterprise Development</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Proven track record in developing enterprise applications using Ruby on Rails, managing full-stack environments including Nginx, Apache, Postgres, and RedHat Linux servers. I've led Agile Scrum development and collaborated with analysts and testers to define requirements in JIRA.
+                Proven track record in developing enterprise applications using Ruby on Rails, managing full-stack environments including Nginx, Postgres, and RedHat Linux servers. I've led Agile Scrum development and collaborated with analysts and testers to define requirements in JIRA.
               </p>
             </div>
           </div>

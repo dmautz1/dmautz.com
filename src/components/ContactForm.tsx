@@ -35,23 +35,32 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     setFormStatus({ status: 'submitting', message: 'Sending message...' });
     
-    // This would normally connect to a backend service
-    // For demo purposes, we'll simulate a successful submission after a delay
-    setTimeout(() => {
-      // Simulate form submission response
-      if (Math.random() > 0.1) { // 90% success rate for demo
-        setFormStatus({
-          status: 'success',
-          message: 'Your message has been sent successfully! I will get back to you soon.',
-        });
-        setFormData({ name: '', email: '', subject: '', message: '' });
-      } else {
-        setFormStatus({
-          status: 'error',
-          message: 'There was an error sending your message. Please try again later.',
-        });
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Failed to send message');
       }
-    }, 1500);
+
+      setFormStatus({
+        status: 'success',
+        message: 'Your message has been sent successfully! I will get back to you soon.',
+      });
+      setFormData({ name: '', email: '', subject: '', message: '' });
+    } catch (error) {
+      setFormStatus({
+        status: 'error',
+        message: 'There was an error sending your message. Please try again later.',
+      });
+    }
   };
 
   return (

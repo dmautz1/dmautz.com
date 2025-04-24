@@ -17,13 +17,13 @@ const Footer: React.FC = () => {
             </Link>
             <p className="mt-4 text-sm text-gray-600 dark:text-gray-400 max-w-md">
               Transforming complex data challenges into scalable solutions. 
-              Specializing in ETL processes, Node.js, and React applications.
+              Specializing in ETL processes, cloud infrastructure, and React applications.
             </p>
             <div className="flex space-x-4 mt-6">
               <a href="https://github.com/dmautz1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                 <GitHub className="h-5 w-5" />
               </a>
-              <a href="https://linkedin.com/dmautz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+              <a href="https://linkedin.com/in/dmautz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
               <a href="https://x.com/derun_veroc" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">

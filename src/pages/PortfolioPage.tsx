@@ -40,35 +40,9 @@ const PortfolioPage: React.FC = () => {
   };
 
   const getTagColor = (tag: string, isSelected: boolean) => {
-    const baseColors: Record<string, string> = {
-      ETL: 'bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200',
-      Node: 'bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200',
-      React: 'bg-cyan-100 text-cyan-800 dark:bg-cyan-900 dark:text-cyan-200',
-      SQL: 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900 dark:text-yellow-200',
-      Python: 'bg-purple-100 text-purple-800 dark:bg-purple-900 dark:text-purple-200',
-      Crypto: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-200',
-      AI: 'bg-pink-100 text-pink-800 dark:bg-pink-900 dark:text-pink-200',
-      Kafka: 'bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200',
-      Snowflake: 'bg-indigo-100 text-indigo-800 dark:bg-indigo-900 dark:text-indigo-200',
-      AWS: 'bg-amber-100 text-amber-800 dark:bg-amber-900 dark:text-amber-200',
-      default: 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200'
-    };
-    
-    const selectedColors: Record<string, string> = {
-      ETL: 'bg-blue-600 text-white dark:bg-blue-500',
-      Node: 'bg-green-600 text-white dark:bg-green-500',
-      React: 'bg-cyan-600 text-white dark:bg-cyan-500',
-      SQL: 'bg-yellow-600 text-white dark:bg-yellow-500',
-      Python: 'bg-purple-600 text-white dark:bg-purple-500',
-      Crypto: 'bg-orange-600 text-white dark:bg-orange-500',
-      AI: 'bg-pink-600 text-white dark:bg-pink-500',
-      Kafka: 'bg-red-600 text-white dark:bg-red-500',
-      Snowflake: 'bg-indigo-600 text-white dark:bg-indigo-500',
-      AWS: 'bg-amber-600 text-white dark:bg-amber-500',
-      default: 'bg-gray-600 text-white dark:bg-gray-500'
-    };
-    
-    return isSelected ? (selectedColors[tag] || selectedColors.default) : (baseColors[tag] || baseColors.default);
+    return isSelected 
+      ? 'bg-blue-600 text-white dark:bg-blue-500' 
+      : 'bg-gray-100 text-gray-800 dark:bg-gray-700 dark:text-gray-200';
   };
 
   const container = {

@@ -35,6 +35,7 @@ const AboutPage: React.FC = () => {
 
   const categoryTitles: Record<string, string> = {
     etl: 'ETL & Data Engineering',
+    frontend: 'Frontend Development',
     backend: 'Backend Development',
     database: 'Database Technologies',
     cloud: 'Cloud & DevOps',
@@ -83,13 +84,13 @@ const AboutPage: React.FC = () => {
             </div>
             <div className="mt-6">
               <div className="flex justify-center space-x-4">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+                <a href="https://github.com/dmautz1" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                   <GitHub className="h-6 w-6" />
                 </a>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+                <a href="https://linkedin.com/in/dmautz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+                <a href="https://x.com/derun_veroc" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                   <Twitter className="h-6 w-6" />
                 </a>
               </div>
@@ -108,17 +109,14 @@ const AboutPage: React.FC = () => {
           <div className="lg:col-span-2 space-y-6">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">My Background</h2>
             <div className="prose prose-blue dark:prose-invert max-w-none">
-              <p>
+              <p className="mt-6 text-gray-600 dark:text-gray-300">
                 I'm a Senior Developer at the U.S. Treasury - Office of Financial Research with over a decade of experience in government and enterprise environments. My expertise spans ETL pipeline development, enterprise application architecture, and cloud infrastructure management.
               </p>
-              <p>
+              <p className="mt-6 text-gray-600 dark:text-gray-300">
                 At the Office of Financial Research, I've designed and implemented ETL pipelines for 25+ financial datasets using PySpark, Python, Ruby, EMR, Hive, Trino, S3, and Parquet. I've automated data workflows through Rundeck and developed the OFR Data Catalog using Ruby on Rails, Bootstrap, jQuery, Blacklight, and Solr.
               </p>
-              <p>
-                I've also led the development of enterprise applications for asset management, budgeting, and performance tracking. My experience includes managing full-stack environments with Nginx, Apache, Postgres, and RedHat Linux servers, as well as leading Agile Scrum development teams.
-              </p>
-              <p>
-                Prior to my current role, I served as an IT Specialist at the U.S. Treasury - Office of the CIO, where I administered SharePoint 2010 across 16 offices and managed BMC Remedy ticketing systems. I also have experience as a Lead Developer at ACS Creative, where I led WordPress administration and custom theme development.
+              <p className="mt-6 text-gray-600 dark:text-gray-300">
+                I've also led the development of enterprise applications including managing full-stack environments with Nginx, Postgres, and RedHat Linux servers. I'm a certified scrum master, leading Agile Scrum development teams, collaborating with analysts and testers to define requirements in JIRA.
               </p>
             </div>
             
@@ -132,6 +130,10 @@ const AboutPage: React.FC = () => {
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
                   <span className="ml-2">I combine technical expertise with strong project management skills</span>
+                </li>
+                <li className="flex">
+                  <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
+                  <span className="ml-2">I relentlessly pursue solutions until the problem is solved</span>
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
@@ -169,9 +171,9 @@ const AboutPage: React.FC = () => {
                       skill={skill.name}
                       level={skill.level}
                       color={
-                        skill.level === 5 ? 'bg-blue-500' :
-                        skill.level === 4 ? 'bg-green-500' :
-                        skill.level === 3 ? 'bg-yellow-500' : 'bg-gray-500'
+                        skill.level === 5 ? 'bg-green-500' :
+                        skill.level === 4 ? 'bg-blue-500' :
+                        'bg-yellow-500'
                       }
                     />
                   ))}
@@ -299,12 +301,54 @@ const AboutPage: React.FC = () => {
           </div>
         </section>
 
+        {/* Entrepreneurship Section */}
+        <section className="mb-16">
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-8">Entrepreneurship</h2>
+          <div className="prose prose-blue dark:prose-invert max-w-none">
+            <p className="text-gray-600 dark:text-gray-300">
+              I'm a proud entrepreneur with a passion for building and scaling businesses.
+            </p>
+            <div className="mt-8 space-y-8">
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Regular</h3>
+                <a 
+                  href="https://stayregular.io" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                >
+                  stayregular.io
+                </a>
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
+                  A freemium app that helps you build good habits through recurring tasks and subscribing to popular programs.
+                </p>
+              </div>
+              
+              <div className="bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 border border-gray-200 dark:border-gray-700">
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Rock Paper Books</h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mb-2">(Closed in 2017)</p>
+                <a 
+                  href="https://instagram.com/rockpaperbooks" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors"
+                >
+                  instagram.com/rockpaperbooks
+                </a>
+                <p className="mt-2 text-gray-600 dark:text-gray-300">
+                  A book publishing company that specialized in creating high-quality, beautifully designed classic books. Sold 50,000+ books.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Call to Action */}
         <section>
           <div className="bg-blue-50 dark:bg-blue-900/20 rounded-2xl p-8 text-center">
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Interested in working together?</h2>
             <p className="text-lg text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-              I'm currently open to new opportunities and would love to discuss how I can help with your data challenges or project needs.
+              I'm currently open to new full-time jobs and opportunities and would love to discuss how I can help with your data challenges or project needs.
             </p>
             <Link
               to="/contact"
