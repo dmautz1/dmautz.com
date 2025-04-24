@@ -5,6 +5,8 @@ import { ArrowRight, Download, Cpu, Database, Code, BarChart } from 'lucide-reac
 import SkillBadge from '../components/SkillBadge';
 import skills from '../data/skills';
 import { useInView } from 'react-intersection-observer';
+import meImage from '../assets/me.jpg';
+import resumePdf from '../assets/DavidMautz_Resume.pdf';
 
 const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -66,8 +68,8 @@ const HomePage: React.FC = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
                 <a 
-                  href="/resume.pdf" 
-                  className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md shadow-sm text-gray-700 dark:text-gray-200 bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                  href={resumePdf} 
+                  className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
                 >
                   Download Resume
                   <Download className="ml-2 h-4 w-4" />
@@ -79,7 +81,7 @@ const HomePage: React.FC = () => {
               <div className="relative w-full max-w-xs">
                 <div className="absolute inset-0 rounded-full bg-blue-200 dark:bg-blue-900/30 filter blur-3xl opacity-70 transform -rotate-6"></div>
                 <img 
-                  src="https://images.pexels.com/photos/3771807/pexels-photo-3771807.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                  src={meImage} 
                   alt="David Mautz" 
                   className="relative z-10 w-full h-auto rounded-full border-4 border-white dark:border-gray-800 shadow-xl"
                 />

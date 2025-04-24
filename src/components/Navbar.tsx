@@ -16,7 +16,6 @@ const Navbar: React.FC = () => {
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
     { name: 'Portfolio', path: '/portfolio' },
-    { name: 'Blog', path: '/blog' },
     { name: 'Contact', path: '/contact' }
   ];
 
@@ -47,7 +46,7 @@ const Navbar: React.FC = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Code className="h-6 w-6 text-blue-600 dark:text-blue-400" />
-            <span className="text-xl font-semibold">DevETL</span>
+            <span className="text-xl font-semibold">dmautz</span>
           </Link>
 
           {/* Desktop Navigation */}

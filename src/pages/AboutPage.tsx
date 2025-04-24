@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import skills from '../data/skills';
 import SkillBadge from '../components/SkillBadge';
+import meImage from '../assets/me.jpg';
+import resumePdf from '../assets/DavidMautz_Resume.pdf';
 
 const AboutPage: React.FC = () => {
   const { ref: bioRef, inView: bioInView } = useInView({
@@ -74,7 +76,7 @@ const AboutPage: React.FC = () => {
           <div className="lg:col-span-1">
             <div className="aspect-square rounded-xl overflow-hidden shadow-lg">
               <img 
-                src="https://images.pexels.com/photos/3771807/pexels-photo-3771807.jpeg?auto=compress&cs=tinysrgb&w=600" 
+                src={meImage} 
                 alt="David Mautz" 
                 className="w-full h-full object-cover"
               />
@@ -93,7 +95,7 @@ const AboutPage: React.FC = () => {
               </div>
               <div className="mt-6">
                 <a 
-                  href="/resume.pdf" 
+                  href={resumePdf} 
                   className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors"
                 >
                   <Download className="h-4 w-4 mr-2" />
