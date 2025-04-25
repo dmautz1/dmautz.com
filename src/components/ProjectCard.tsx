@@ -85,7 +85,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               aria-label="View live demo"
             >
               <ExternalLink className="h-4 w-4 mr-2" />
-              Live Demo
+              Check it out
             </a>
           )}
         </div>

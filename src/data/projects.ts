@@ -22,7 +22,7 @@ const projects: Project[] = [
     id: 'regular',
     title: 'Regular',
     liveUrl: 'https://stayregular.io',
-    description: 'A freemium app that helps you build good habits through recurring tasks and subscribing to popular programs.',
+    description: 'Stay Regular so you can become exceptional. A freemium app that helps you build good habits through recurring tasks and subscribing to popular programs.',
     image: regularImage,
     tags: ['React', 'Node.js', 'Supabase', 'Vercel', 'MUI', 'Stripe'],
     achievements: [
