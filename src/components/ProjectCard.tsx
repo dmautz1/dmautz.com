@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
-        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">{project.description}</p>
+        <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-8">{project.description}</p>
         
         <div className="mb-4 flex flex-wrap gap-2">
           {project.tags.map((tag) => (
@@ -70,8 +70,8 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               aria-label="View source code on GitHub"
             >
               <div className="flex items-center">
-                <GitHub className="h-4 w-4 mr-1" />
-                <span className="text-sm">Code</span>
+                <GitHub className="h-4 w-4 mr-1 text-blue-400" />
+                <span className="text-sm text-blue-400">Code</span>
               </div>
             </a>
           )}
@@ -81,11 +81,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               href={project.liveUrl} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-xs font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
               aria-label="View live demo"
             >
               <ExternalLink className="h-4 w-4 mr-2" />
-              Check it out
+              {project.liveUrl}
             </a>
           )}
         </div>

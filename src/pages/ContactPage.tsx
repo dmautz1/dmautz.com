@@ -82,7 +82,7 @@ const ContactPage: React.FC = () => {
                   <Linkedin className="h-6 w-6" />
                 </a>
                 <a 
-                  href="https://twitter.com/derun_veroc" 
+                  href="https://twitter.com/dmautz" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="p-3 rounded-full bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-blue-100 hover:text-blue-600 dark:hover:bg-blue-900 dark:hover:text-blue-400 transition-colors"

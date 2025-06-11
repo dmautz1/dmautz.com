@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github as GitHub, Linkedin, Twitter, ChevronRight, Download } from 'lucide-react';
+import { Github as GitHub, Linkedin, Twitter, ChevronRight, File } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import skills from '../data/skills';
 import SkillBadge from '../components/SkillBadge';
 import meImage from '../assets/me.jpg';
-import resumePdf from '../assets/DavidMautz_Resume.pdf';
 
 const AboutPage: React.FC = () => {
   const { ref: bioRef, inView: bioInView } = useInView({
@@ -34,6 +33,7 @@ const AboutPage: React.FC = () => {
   }, {} as Record<string, typeof skills>);
 
   const categoryTitles: Record<string, string> = {
+    ai: 'AI & Machine Learning',
     etl: 'ETL & Data Engineering',
     frontend: 'Frontend Development',
     backend: 'Backend Development',
@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Senior Developer specializing in ETL pipelines, enterprise applications, and cloud infrastructure with extensive government and enterprise experience.
+              Senior Developer specializing in AI agent platforms, ETL pipelines, enterprise applications, and production-ready systems with extensive government and enterprise experience.
             </p>
           </motion.div>
         </div>
@@ -90,17 +90,17 @@ const AboutPage: React.FC = () => {
                 <a href="https://linkedin.com/in/dmautz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </a>
-                <a href="https://x.com/derun_veroc" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+                <a href="https://x.com/dmautz" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                   <Twitter className="h-6 w-6" />
                 </a>
               </div>
               <div className="mt-6">
                 <a 
-                  href={resumePdf} 
+                  href="/resume" 
                   className="w-full flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition-colors"
                 >
-                  <Download className="h-4 w-4 mr-2" />
-                  Download Resume
+                  <File className="h-4 w-4 mr-2" />
+                  View Resume
                 </a>
               </div>
             </div>
@@ -110,7 +110,10 @@ const AboutPage: React.FC = () => {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">My Background</h2>
             <div className="prose prose-blue dark:prose-invert max-w-none">
               <p className="mt-6 text-gray-600 dark:text-gray-300">
-                I'm a Senior Developer at the U.S. Treasury - Office of Financial Research with over a decade of experience in government and enterprise environments. My expertise spans ETL pipeline development, enterprise application architecture, and cloud infrastructure management.
+                I'm a Senior Developer at the U.S. Treasury - Office of Financial Research with over a decade of experience in government and enterprise environments. My expertise spans AI agent development, ETL pipeline architecture, enterprise application development, and cloud infrastructure management.
+              </p>
+              <p className="mt-6 text-gray-600 dark:text-gray-300">
+                Recently, I've built a production-ready AI Agent Platform supporting multiple AI providers (OpenAI, Google AI, Anthropic, Grok, DeepSeek, Meta Llama) with zero-config agent discovery, type-safe development, and 100% test coverage. This platform demonstrates my ability to architect scalable, production-ready systems with comprehensive testing and modern development practices.
               </p>
               <p className="mt-6 text-gray-600 dark:text-gray-300">
                 At the Office of Financial Research, I've designed and implemented ETL pipelines for 25+ financial datasets using PySpark, Python, Ruby, EMR, Hive, Trino, S3, and Parquet. I've automated data workflows through Rundeck and developed the OFR Data Catalog using Ruby on Rails, Bootstrap, jQuery, Blacklight, and Solr.
@@ -125,7 +128,11 @@ const AboutPage: React.FC = () => {
               <ul className="space-y-3">
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I bring extensive experience in government and enterprise environments</span>
+                  <span className="ml-2">I build production-ready systems with comprehensive testing and modern development practices</span>
+                </li>
+                <li className="flex">
+                  <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
+                  <span className="ml-2">I bring extensive experience in AI integration and multi-provider architectures</span>
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
@@ -137,11 +144,7 @@ const AboutPage: React.FC = () => {
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I have a proven track record in ETL pipeline development and enterprise applications</span>
-                </li>
-                <li className="flex">
-                  <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I prioritize clean code, documentation, and sustainable solutions</span>
+                  <span className="ml-2">I prioritize type-safe development, documentation, and sustainable solutions</span>
                 </li>
               </ul>
             </div>

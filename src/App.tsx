@@ -6,6 +6,7 @@ import Navbar from './components/Navbar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import PortfolioPage from './pages/PortfolioPage';
+import ResumePage from './pages/ResumePage';
 import ContactPage from './pages/ContactPage';
 
 // Scroll to top on route change
@@ -30,6 +31,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/portfolio" element={<PortfolioPage />} />
+            <Route path="/resume" element={<ResumePage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
         </Layout>

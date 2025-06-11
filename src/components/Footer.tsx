@@ -26,7 +26,7 @@ const Footer: React.FC = () => {
               <a href="https://linkedin.com/in/dmautz" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                 <Linkedin className="h-5 w-5" />
               </a>
-              <a href="https://x.com/derun_veroc" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
+              <a href="https://x.com/dmautz" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="text-gray-500 hover:text-blue-600 dark:text-gray-400 dark:hover:text-blue-400 transition-colors">
                 <Twitter className="h-5 w-5" />
               </a>
             </div>
@@ -44,6 +44,9 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <Link to="/portfolio" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Portfolio</Link>
+              </li>
+              <li>
+                <Link to="/resume" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Resume</Link>
               </li>
               <li>
                 <Link to="/contact" className="text-sm text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</Link>

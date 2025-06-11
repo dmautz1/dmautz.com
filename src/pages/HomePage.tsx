@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { ArrowRight, Download, Cpu, Database, Code, BarChart } from 'lucide-react';
+import { ArrowRight, File, Cpu, Database, Code, BarChart } from 'lucide-react';
 import SkillBadge from '../components/SkillBadge';
 import skills from '../data/skills';
 import { useInView } from 'react-intersection-observer';
 import meImage from '../assets/me.jpg';
-import resumePdf from '../assets/DavidMautz_Resume.pdf';
 
 const HomePage: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
@@ -69,11 +68,11 @@ const HomePage: React.FC = () => {
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
                 <a 
-                  href={resumePdf} 
+                  href="/resume"
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
                 >
-                  Download Resume
-                  <Download className="ml-2 h-4 w-4" />
+                  View Resume
+                  <File className="ml-2 h-4 w-4" />
                 </a>
               </div>
             </div>
@@ -159,11 +158,25 @@ const HomePage: React.FC = () => {
                 Extensive experience in designing and implementing ETL pipelines for financial data using PySpark, Python, Ruby, EMR, Hive, Trino, S3, and Parquet. I've automated data workflows and task management through Rundeck to optimize efficiency for data teams.
               </p>
             </div>
-            
+
+            <div className="space-y-6">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">AI & Agent Development</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                I've built a production-ready AI agent platform using Python, TypeScript, FastAPI, React, and Supabase. The platform allows users to build, deploy, and scale intelligent agents with multi-provider AI support.
+              </p>
+            </div>
+
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Enterprise Development</h3>
               <p className="text-gray-600 dark:text-gray-300">
                 Proven track record in developing enterprise applications using Ruby on Rails, managing full-stack environments including Nginx, Postgres, and RedHat Linux servers. I've led Agile Scrum development and collaborated with analysts and testers to define requirements in JIRA.
+              </p>
+            </div>
+
+            <div className="space-y-6">
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Cryptocurrency & Blockchain</h3>
+              <p className="text-gray-600 dark:text-gray-300">
+                Since 2019 I've immersed myself in the world of cryptocurrency and blockchain, learning about the technology, the markets, and the opportunities it presents. I've amassed a large amount of knowledge and experience in the space, and I'm always looking for new ways to apply it to my work.
               </p>
             </div>
           </div>
