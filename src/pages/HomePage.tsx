@@ -67,13 +67,13 @@ const HomePage: React.FC = () => {
                   View Portfolio
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
-                <a 
-                  href="/resume"
+                <Link
+                  to="/resume"
                   className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
                 >
                   View Resume
                   <File className="ml-2 h-4 w-4" />
-                </a>
+                </Link>
               </div>
             </div>
             
