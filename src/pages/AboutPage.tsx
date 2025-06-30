@@ -61,7 +61,7 @@ const AboutPage: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
           >
             <p className="text-xl text-gray-600 dark:text-gray-300">
-              Senior Developer specializing in AI agent platforms, ETL pipelines, enterprise applications, and production-ready systems with extensive government and enterprise experience.
+              Senior Data Engineer specializing in AI-driven solutions, data engineering, and blockchain technologies with 15 years of experience at the U.S. Treasury.
             </p>
           </motion.div>
         </div>
@@ -110,16 +110,16 @@ const AboutPage: React.FC = () => {
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white">My Background</h2>
             <div className="prose prose-blue dark:prose-invert max-w-none">
               <p className="mt-6 text-gray-600 dark:text-gray-300">
-                I'm a Senior Developer at the U.S. Treasury - Office of Financial Research with over a decade of experience in government and enterprise environments. My expertise spans AI agent development, ETL pipeline architecture, enterprise application development, and cloud infrastructure management.
+                I'm a Senior Data Engineer at the U.S. Treasury - Office of Financial Research with 15 years of experience specializing in AI-driven solutions, data engineering, and blockchain technologies. My expertise spans designing and implementing scalable ETL pipelines, AI agent platforms, and automated workflows using Python, PySpark, FastAPI, and AWS.
               </p>
               <p className="mt-6 text-gray-600 dark:text-gray-300">
-                Recently, I've built a production-ready AI Agent Platform supporting multiple AI providers (OpenAI, Google AI, Anthropic, Grok, DeepSeek, Meta Llama) with zero-config agent discovery, type-safe development, and 100% test coverage. This platform demonstrates my ability to architect scalable, production-ready systems with comprehensive testing and modern development practices.
+                Recently, I've built a scalable AI Agent Platform with multi-provider support leveraging Python, FastAPI, and LLMs. I've also developed the Regular App, a task-tracking application with subscription-based programs using React, Node.js, and Supabase. These projects demonstrate my ability to architect modern, production-ready systems.
               </p>
               <p className="mt-6 text-gray-600 dark:text-gray-300">
-                At the Office of Financial Research, I've designed and implemented ETL pipelines for 25+ financial datasets using PySpark, Python, Ruby, EMR, Hive, Trino, S3, and Parquet. I've automated data workflows through Rundeck and developed the OFR Data Catalog using Ruby on Rails, Bootstrap, jQuery, Blacklight, and Solr.
+                At the Office of Financial Research, I've engineered ETL pipelines for 25+ terabyte-scale datasets using PySpark, Python, Ruby, and AWS (EMR, S3, Lambda). I've designed and deployed end-to-end data collection systems for 40 financial institutions and developed automated entity resolution systems for streamlining data processing.
               </p>
               <p className="mt-6 text-gray-600 dark:text-gray-300">
-                I've also led the development of enterprise applications including managing full-stack environments with Nginx, Postgres, and RedHat Linux servers. I'm a certified scrum master, leading Agile Scrum development teams, collaborating with analysts and testers to define requirements in JIRA.
+                I've also developed the OFR Data Catalog using Ruby on Rails, managed full-stack environments, and led Agile Scrum teams. As a Certified Scrum Master since 2016, I excel at collaborating with analysts and stakeholders to deliver high-quality solutions. Since 2019, I've been actively engaged in blockchain, smart contracts, and NFTs with hands-on experience in Solidity.
               </p>
             </div>
             
@@ -128,23 +128,23 @@ const AboutPage: React.FC = () => {
               <ul className="space-y-3">
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I build production-ready systems with comprehensive testing and modern development practices</span>
+                  <span className="ml-2">I build scalable, production-ready systems with comprehensive AI integration</span>
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I bring extensive experience in AI integration and multi-provider architectures</span>
+                  <span className="ml-2">I bring 15 years of government and enterprise experience in data engineering</span>
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I combine technical expertise with strong project management skills</span>
+                  <span className="ml-2">I excel at designing and implementing terabyte-scale ETL pipelines</span>
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I relentlessly pursue solutions until the problem is solved</span>
+                  <span className="ml-2">I combine technical expertise with strong Scrum Master project management skills</span>
                 </li>
                 <li className="flex">
                   <ChevronRight className="h-6 w-6 text-blue-500 flex-shrink-0" />
-                  <span className="ml-2">I prioritize type-safe development, documentation, and sustainable solutions</span>
+                  <span className="ml-2">I stay current with emerging technologies like AI, blockchain, and smart contracts</span>
                 </li>
               </ul>
             </div>
@@ -200,26 +200,26 @@ const AboutPage: React.FC = () => {
             <div className="relative pl-8 pb-2 border-l-2 border-blue-200 dark:border-blue-800">
               <div className="absolute -left-2 top-0 h-4 w-4 rounded-full bg-blue-600"></div>
               <div className="mb-1 flex items-center justify-between flex-wrap">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Senior Developer</h3>
-                <span className="text-sm text-gray-500 dark:text-gray-400">April 2013 - Present</span>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Senior Data Engineer</h3>
+                <span className="text-sm text-gray-500 dark:text-gray-400">July 2016 - Present</span>
               </div>
               <h4 className="text-lg text-blue-600 dark:text-blue-400 mb-2">U.S. Treasury - Office of Financial Research</h4>
               <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-300">
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Developed ETL pipelines for 25+ financial datasets using PySpark, Python, Ruby, EMR, Hive, Trino, S3, and Parquet</span>
+                  <span className="ml-2">Engineered ETL pipelines for 25+ terabyte-scale datasets using PySpark, Python, Ruby, and AWS (EMR, S3, Lambda)</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Built the OFR Data Catalog using Ruby on Rails, Bootstrap, jQuery, Blacklight, and Solr</span>
+                  <span className="ml-2">Designed end-to-end data collection system for 40 financial institutions with automated workflows</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Designed and deployed PIV data synchronization system for Active Directory, Exchange, and Teams</span>
+                  <span className="ml-2">Developed automated entity resolution systems for streamlining data processing</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Led Agile Scrum development and managed full-stack environments</span>
+                  <span className="ml-2">Built data ingestion pipelines with SFTP, SSL, S3, and web scraping capabilities</span>
                 </li>
               </ul>
             </div>
@@ -227,22 +227,26 @@ const AboutPage: React.FC = () => {
             <div className="relative pl-8 pb-2 border-l-2 border-blue-200 dark:border-blue-800">
               <div className="absolute -left-2 top-0 h-4 w-4 rounded-full bg-blue-600"></div>
               <div className="mb-1 flex items-center justify-between flex-wrap">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">IT Specialist</h3>
-                <span className="text-sm text-gray-500 dark:text-gray-400">September 2010 - April 2013</span>
+                <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Software Engineer</h3>
+                <span className="text-sm text-gray-500 dark:text-gray-400">April 2013 - July 2016</span>
               </div>
-              <h4 className="text-lg text-blue-600 dark:text-blue-400 mb-2">U.S. Treasury - Office of the CIO</h4>
+              <h4 className="text-lg text-blue-600 dark:text-blue-400 mb-2">U.S. Treasury - Office of Financial Research</h4>
               <ul className="mt-4 space-y-2 text-gray-600 dark:text-gray-300">
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Administered SharePoint 2010 across 16 offices</span>
+                  <span className="ml-2">Developed the OFR Data Catalog using Ruby on Rails, Bootstrap, jQuery, Blacklight, and Solr</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Managed BMC Remedy ticketing, incident, asset, and change management systems</span>
+                  <span className="ml-2">Built Ruby on Rails applications for budgeting, procurement, and asset management</span>
                 </li>
                 <li className="flex items-start">
                   <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
-                  <span className="ml-2">Developed PIV data synchronization using IBM Tivoli Identity Manager</span>
+                  <span className="ml-2">Designed PIV synchronization system, later migrated to ServiceNow</span>
+                </li>
+                <li className="flex items-start">
+                  <ChevronRight className="h-5 w-5 text-blue-500 flex-shrink-0 mt-1" />
+                  <span className="ml-2">Led Agile Scrum teams and managed full-stack environments with PostgreSQL and AWS EC2</span>
                 </li>
               </ul>
             </div>

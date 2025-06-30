@@ -53,10 +53,10 @@ const HomePage: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-3/5 md:pr-12">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 dark:text-white leading-tight">
-                <span className="text-blue-600 dark:text-blue-400">Senior Developer</span> & Data Engineering Expert
+                <span className="text-blue-600 dark:text-blue-400">Senior Data Engineer</span> & AI Solutions Expert
               </h1>
               <p className="mt-6 text-xl text-gray-600 dark:text-gray-300">
-                Hi, I'm David Mautz, a Senior Developer at the U.S. Treasury - Office of Financial Research. I specialize in building scalable ETL pipelines, enterprise applications, and data management systems using Python, Ruby on Rails, and modern cloud technologies.
+                Hi, I'm David Mautz, a Senior Data Engineer at the U.S. Treasury - Office of Financial Research with 15 years of experience specializing in AI-driven solutions, data engineering, and blockchain technologies. I build scalable ETL pipelines, AI agent platforms, and automated workflows using Python, PySpark, FastAPI, and AWS.
               </p>
               
               <div className="mt-8 flex flex-wrap gap-4">
@@ -103,7 +103,7 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">My Skills</h2>
             <p className="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              I specialize in ETL processes, data pipeline optimization, enterprise application development, and cloud infrastructure management.
+              I specialize in AI-driven solutions, terabyte-scale ETL pipelines, data engineering, and automated workflows with expertise in Python, PySpark, FastAPI, and AWS.
             </p>
           </div>
           
@@ -147,7 +147,7 @@ const HomePage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white">Areas of Expertise</h2>
             <p className="mt-4 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              With over a decade of experience in government and enterprise environments, I bring a unique combination of technical expertise and project management skills.
+              With 15 years of experience at the U.S. Treasury specializing in AI-driven solutions and data engineering, I bring proven expertise in building scalable, production-ready systems for financial institutions.
             </p>
           </div>
           
@@ -155,28 +155,28 @@ const HomePage: React.FC = () => {
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Data Engineering & ETL</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Extensive experience in designing and implementing ETL pipelines for financial data using PySpark, Python, Ruby, EMR, Hive, Trino, S3, and Parquet. I've automated data workflows and task management through Rundeck to optimize efficiency for data teams.
+                I've engineered ETL pipelines for 25+ terabyte-scale datasets using PySpark, Python, Ruby, and AWS (EMR, S3, Lambda). I've designed end-to-end data collection systems for 40 financial institutions and developed automated entity resolution systems for streamlining data processing workflows.
               </p>
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">AI & Agent Development</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">AI & Machine Learning</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                I've built a production-ready AI agent platform using Python, TypeScript, FastAPI, React, and Supabase. The platform allows users to build, deploy, and scale intelligent agents with multi-provider AI support.
+                I've built a scalable AI Agent Platform with multi-provider support (OpenAI, Google AI, Anthropic, Grok, DeepSeek, Meta Llama) using Python, FastAPI, and LLMs. I specialize in prompt engineering, machine learning pipelines, and AI-driven automation solutions.
               </p>
             </div>
 
             <div className="space-y-6">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white">Enterprise Development</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Proven track record in developing enterprise applications using Ruby on Rails, managing full-stack environments including Nginx, Postgres, and RedHat Linux servers. I've led Agile Scrum development and collaborated with analysts and testers to define requirements in JIRA.
+                Proven track record developing enterprise applications using Ruby on Rails, managing full-stack environments with Nginx, Apache, PostgreSQL, and AWS EC2. As a Certified Scrum Master since 2016, I've led Agile teams and collaborated with analysts to deliver high-quality solutions.
               </p>
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Cryptocurrency & Blockchain</h3>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white">Blockchain & Smart Contracts</h3>
               <p className="text-gray-600 dark:text-gray-300">
-                Since 2019 I've immersed myself in the world of cryptocurrency and blockchain, learning about the technology, the markets, and the opportunities it presents. I've amassed a large amount of knowledge and experience in the space, and I'm always looking for new ways to apply it to my work.
+                Since 2019, I've been actively engaged in blockchain technologies, smart contracts, and NFTs with hands-on experience in Solidity. I stay current with crypto technologies and explore opportunities to integrate blockchain solutions into traditional enterprise systems.
               </p>
             </div>
           </div>

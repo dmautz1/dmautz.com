@@ -5,15 +5,15 @@ import { Download, FileText, ExternalLink } from 'lucide-react';
 const ResumePage: React.FC = () => {
   const handleDownload = () => {
     const link = document.createElement('a');
-    link.href = '/assets/Mautz_Resume.docx';
-    link.download = 'Mautz_Resume.docx';
+    link.href = '/assets/mautz_resume.pdf';
+    link.download = 'David_Mautz_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
   const handleViewOnline = () => {
-    window.open('/assets/Mautz_Resume.docx', '_blank');
+    window.open('/assets/mautz_resume.pdf', '_blank');
   };
 
   return (
@@ -59,9 +59,9 @@ const ResumePage: React.FC = () => {
               
               <h2 className="text-2xl font-semibold mb-4">David Mautz - Resume</h2>
               <p className="text-gray-600 dark:text-gray-300 mb-8">
-                Complete professional resume including experience in software development, 
-                data engineering, and full-stack development with expertise in Python, 
-                TypeScript, React, and modern cloud technologies.
+                Senior Data Engineer with 15 years of experience specializing in AI-driven solutions, 
+                data engineering, and blockchain technologies. Expertise in scalable ETL pipelines, 
+                AI agent platforms, and automated workflows using Python, PySpark, FastAPI, and AWS.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -71,6 +71,13 @@ const ResumePage: React.FC = () => {
                 >
                   <Download className="h-5 w-5 mr-2" />
                   Download Resume
+                </button>
+                <button
+                  onClick={handleViewOnline}
+                  className="inline-flex items-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-md text-gray-700 dark:text-gray-300 bg-white dark:bg-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors"
+                >
+                  <ExternalLink className="h-5 w-5 mr-2" />
+                  View Online
                 </button>
               </div>
             </div>
@@ -86,25 +93,65 @@ const ResumePage: React.FC = () => {
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-4">Key Skills</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Full-Stack Development (React, TypeScript, Python)</li>
-                <li>• Data Engineering (PySpark, ETL Pipelines, AWS)</li>
-                <li>• AI/ML Integration (OpenAI, Google AI, Anthropic)</li>
-                <li>• Cloud Technologies (AWS, Supabase, Vercel)</li>
-                <li>• Database Design (PostgreSQL, MongoDB, SQL Server)</li>
-                <li>• DevOps & CI/CD (Docker, GitHub Actions)</li>
+                <li>• AI & Machine Learning (LLMs, NLP, AI Agents)</li>
+                <li>• Data Engineering (PySpark, Hive, Trino, Parquet)</li>
+                <li>• Programming (Python, Ruby, JavaScript, TypeScript)</li>
+                <li>• Cloud & DevOps (AWS, Rundeck, Apache, Nginx)</li>
+                <li>• Modern Frameworks (React, FastAPI, Node.js)</li>
+                <li>• Blockchain (Solidity, Smart Contracts, NFTs)</li>
               </ul>
             </div>
 
             <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
               <h3 className="text-xl font-semibold mb-4">Experience Highlights</h3>
               <ul className="space-y-2 text-gray-600 dark:text-gray-300">
-                <li>• Built production-ready AI agent platform</li>
-                <li>• Developed ETL pipelines processing millions of records</li>
-                <li>• Created full-stack web applications</li>
-                <li>• Published books and managed business operations</li>
-                <li>• Automated identity management systems</li>
-                <li>• Implemented comprehensive testing strategies</li>
+                <li>• Built AI agent platform with multi-provider support</li>
+                <li>• Engineered ETL pipelines for 25+ terabyte-scale datasets</li>
+                <li>• Designed data collection systems for 40 financial institutions</li>
+                <li>• Developed automated entity resolution systems</li>
+                <li>• Created full-stack applications with modern technologies</li>
+                <li>• Led Agile Scrum teams and project management</li>
               </ul>
+            </div>
+          </motion.div>
+
+          {/* Recent Projects */}
+          <motion.div
+            className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mt-8"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.0 }}
+          >
+            <h3 className="text-xl font-semibold mb-4">Recent Projects</h3>
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <h4 className="font-medium mb-2">AI Agent Platform (2025)</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">
+                  Scalable framework for AI agents with multi-provider support using Python, FastAPI, and LLMs
+                </p>
+                <a 
+                  href="https://github.com/dmautz1/ai-agent-platform" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
+                >
+                  View on GitHub →
+                </a>
+              </div>
+              <div>
+                <h4 className="font-medium mb-2">Regular App (2024)</h4>
+                <p className="text-gray-600 dark:text-gray-300 text-sm mb-2">
+                  Task-tracking app with subscription programs using React, Node.js, and Supabase
+                </p>
+                <a 
+                  href="https://stayregular.io" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
+                >
+                  Visit stayregular.io →
+                </a>
+              </div>
             </div>
           </motion.div>
 
@@ -113,7 +160,7 @@ const ResumePage: React.FC = () => {
             className="text-center mt-12"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 1.0 }}
+            transition={{ duration: 0.6, delay: 1.2 }}
           >
             <p className="text-gray-600 dark:text-gray-300">
               For questions about my experience or to discuss opportunities, 
